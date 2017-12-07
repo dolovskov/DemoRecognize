@@ -57,11 +57,12 @@ class RecognizerName: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate {
     @objc func checkSpeech() {
         self.endCapture()
         let checkText = self.speechText
-        var name = ""
         if checkText.count > 11 {
-            name = String(checkText.suffix(from: String.Index.init(encodedOffset: 11)))
+            let name = String(checkText.suffix(from: String.Index.init(encodedOffset: 11)))
+            self.showName(name: name)
+        } else {
+            self.startRecognize()
         }
-        self.showName(name: name)
     }
     
     func showName(name: String) {
