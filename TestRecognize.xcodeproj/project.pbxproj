@@ -22,6 +22,7 @@
 		AB6080F01FD94F9200894AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB6080F31FD94F9200894AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB6080F51FD94F9200894AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6080FC1FD9516500894AF1 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 			children = (
 				AB6080E81FD94F9200894AF1 /* TestRecognize */,
 				AB6080E71FD94F9200894AF1 /* Products */,
+				AB6080FB1FD9516500894AF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +64,14 @@
 				AB6080F51FD94F9200894AF1 /* Info.plist */,
 			);
 			path = TestRecognize;
+			sourceTree = "<group>";
+		};
+		AB6080FB1FD9516500894AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB6080FC1FD9516500894AF1 /* Speech.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
