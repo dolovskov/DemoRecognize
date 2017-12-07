@@ -12,6 +12,8 @@
 		AB6080EF1FD94F9200894AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6080ED1FD94F9200894AF1 /* Main.storyboard */; };
 		AB6080F11FD94F9200894AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6080F01FD94F9200894AF1 /* Assets.xcassets */; };
 		AB6080F41FD94F9200894AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6080F21FD94F9200894AF1 /* LaunchScreen.storyboard */; };
+		AB6080FE1FD9866700894AF1 /* RecognizerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6080FD1FD9866700894AF1 /* RecognizerName.swift */; };
+		AB6081001FD98C9400894AF1 /* HelloDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6080FF1FD98C9400894AF1 /* HelloDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		AB6080F31FD94F9200894AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB6080F51FD94F9200894AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB6080FC1FD9516500894AF1 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		AB6080FD1FD9866700894AF1 /* RecognizerName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizerName.swift; sourceTree = "<group>"; };
+		AB6080FF1FD98C9400894AF1 /* HelloDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				AB6080E91FD94F9200894AF1 /* AppDelegate.swift */,
 				AB6080EB1FD94F9200894AF1 /* ViewController.swift */,
+				AB6080FD1FD9866700894AF1 /* RecognizerName.swift */,
+				AB6080FF1FD98C9400894AF1 /* HelloDialog.swift */,
 				AB6080ED1FD94F9200894AF1 /* Main.storyboard */,
 				AB6080F01FD94F9200894AF1 /* Assets.xcassets */,
 				AB6080F21FD94F9200894AF1 /* LaunchScreen.storyboard */,
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6081001FD98C9400894AF1 /* HelloDialog.swift in Sources */,
+				AB6080FE1FD9866700894AF1 /* RecognizerName.swift in Sources */,
 				AB6080EC1FD94F9200894AF1 /* ViewController.swift in Sources */,
 				AB6080EA1FD94F9200894AF1 /* AppDelegate.swift in Sources */,
 			);

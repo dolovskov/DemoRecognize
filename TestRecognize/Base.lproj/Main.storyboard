@@ -9,6 +9,12 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cochin.ttc">
+            <string>Cochin</string>
+            <string>Cochin-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -19,8 +25,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say: &quot;My name is...&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbt-G2-OF8">
-                                <rect key="frame" x="107.5" y="333" width="159" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="101.5" y="332" width="172.5" height="23"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -36,6 +42,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="114.69265367316342"/>
+        </scene>
+        <!--Hello Dialog-->
+        <scene sceneID="flh-mq-wQ8">
+            <objects>
+                <viewController storyboardIdentifier="helloDialog" id="IOl-3V-kIS" customClass="HelloDialog" customModule="TestRecognize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jlk-7n-FWF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4f-mX-HCI">
+                                <rect key="frame" x="37" y="267" width="300" height="153"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvW-cn-L9a">
+                                        <rect key="frame" x="117" y="20" width="66" height="32"/>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CL-cg-sK8">
+                                        <rect key="frame" x="20" y="60" width="260" height="29"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yW-be-rkk">
+                                        <rect key="frame" x="0.0" y="109" width="300" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Ujf-GG-yPt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="23"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" red="0.00064125935651644086" green="0.52551680462405315" blue="0.82235670336787559" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okButtonClick:" destination="IOl-3V-kIS" eventType="touchUpInside" id="s8o-dj-OW5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="28I-OP-bqR"/>
+                                    <constraint firstItem="3CL-cg-sK8" firstAttribute="leading" secondItem="K4f-mX-HCI" secondAttribute="leading" constant="20" id="8MV-nq-uuS"/>
+                                    <constraint firstItem="FvW-cn-L9a" firstAttribute="centerX" secondItem="K4f-mX-HCI" secondAttribute="centerX" id="BkT-lF-6zJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="3CL-cg-sK8" secondAttribute="trailing" constant="20" id="E1J-7S-pBC"/>
+                                    <constraint firstAttribute="bottom" secondItem="2yW-be-rkk" secondAttribute="bottom" id="ZTQ-eT-tqy"/>
+                                    <constraint firstItem="FvW-cn-L9a" firstAttribute="top" secondItem="K4f-mX-HCI" secondAttribute="top" constant="20" id="cuh-i0-6Eb"/>
+                                    <constraint firstAttribute="trailing" secondItem="2yW-be-rkk" secondAttribute="trailing" id="er0-Mr-NDJ"/>
+                                    <constraint firstItem="2yW-be-rkk" firstAttribute="leading" secondItem="K4f-mX-HCI" secondAttribute="leading" id="gG8-h5-Ntg"/>
+                                    <constraint firstItem="2yW-be-rkk" firstAttribute="top" secondItem="3CL-cg-sK8" secondAttribute="bottom" constant="20" id="ug4-WN-KqM"/>
+                                    <constraint firstItem="3CL-cg-sK8" firstAttribute="top" secondItem="FvW-cn-L9a" secondAttribute="bottom" constant="8" id="yQA-1J-QIp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.25596941021126762" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K4f-mX-HCI" firstAttribute="centerX" secondItem="07J-HK-8VF" secondAttribute="centerX" id="bYm-OW-exu"/>
+                            <constraint firstItem="K4f-mX-HCI" firstAttribute="centerY" secondItem="07J-HK-8VF" secondAttribute="centerY" id="rcU-wF-HNu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="07J-HK-8VF"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="3CL-cg-sK8" id="efS-Gh-WFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ns2-P5-2va" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="114.69265367316342"/>
         </scene>
     </scenes>
 </document>
